@@ -24,7 +24,21 @@
 function range(start, end) {
     // YOUR CODE GOES BELOW HERE //
     
-    
+    var result = [];
+
+    if (start <= end) {
+      // Forward range
+      for (var i = start; i <= end; i++) {
+        result.push(i);
+      }
+    } else {
+      // Reverse range
+      for (var i = start; i >= end; i--) {
+        result.push(i);
+      }
+    }
+  
+    return result;
     
     
     // YOUR CODE GOES ABOVE HERE //
